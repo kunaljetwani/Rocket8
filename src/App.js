@@ -3,12 +3,7 @@ import AllEmails from "./innerComponents/AllEmails";
 import ViewMail from "./innerComponents/ViewMail";
 
 function App() {
-  const toNormalDate = (timstamp) => {
-    const timestamp = 1582728505000; // Unix timestamp in milliseconds
-    const date = new Date(timestamp);
-    const normalDate = date.toLocaleString();
-    return normalDate;
-  };
+ 
   const [allEmails, setAllEmails] = useState([]);
   const [viewMail, setViewMail] = useState(0);
   const getAllMails = () => {
