@@ -11,3 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  /* text-align: center; */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mail {
+  border: 1px solid;
+  background: #F4F5F9;
+  padding: 8px 0;
+  border-radius: 8px;
+}
+
+.mail .top {
+  display: flex;
+  gap: 10px;
+}
+.mail .top .left {
+  flex: 0.15;
+}
+.mail .top .right {
+  flex: 1;
+}
+
+.mail .top .left .namespace {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  background: #e54065;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .mailBody {
+  display: flex;
+  gap: 20px;
+}
+.App .mailBody .allmails {
+  display: flex;
+  flex-direction: column;
+  gap :20px;
+  flex: 0.3;
+}
+.App .mailBody .viewMail {
+  /* display: flex; */
+  flex: 0.7;
+  max-height: calc(100vh - 120px);
+  border: 1px solid;
+    border-radius: 8px;
+}
+
+.mail.viewMail .top .left {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+h1 {
+  margin: 15px 0;
+}
+
+.mail.viewMail .top .right {
+  margin-right: 20px;
+}
